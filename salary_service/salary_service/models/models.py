@@ -1,18 +1,18 @@
 from pydantic import BaseModel
 from datetime import date
 
-class Token(BaseModel):
-    token: str
-
 
 class SalaryResponse(BaseModel):
     salary: float
     next_promotion: date
 
 
-class User(BaseModel):
+class UserLogin(BaseModel):
     username: str
     password: str
+
+class User(BaseModel):
+    login_data: UserLogin
     salary_inf: SalaryResponse
 
 
