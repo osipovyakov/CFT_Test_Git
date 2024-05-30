@@ -28,9 +28,4 @@ async def login(user: UserLogin, Authorize: AuthJWT = Depends()):
 async def get_salary(Authorize: AuthJWT = Depends()):
     Authorize.jwt_required()
     user = Authorize.get_jwt_subject()
-    if not user:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail='Неправильный токен'
-        )
     return user, USERS[user].salary_inf
