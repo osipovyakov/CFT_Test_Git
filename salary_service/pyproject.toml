@@ -2,7 +2,7 @@
 name = "salary-service"
 version = "0.1.0"
 description = "REST service for viewing current salary and next raise date"
-authors = ["Your Name <your.email@example.com>"]
+authors = ["Osipov Yakov <osipovyakovv@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
