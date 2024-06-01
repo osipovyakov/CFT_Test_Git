@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends
 from fastapi_jwt_auth import AuthJWT
 from salary_service.utiles.verification_util import user_verification
 from salary_service.models.models import UserLogin, Settings
